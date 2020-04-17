@@ -13,5 +13,6 @@ Eventually it would be nice to have a true subscription model, but for now the e
 
 
 ## Is this software useful beyond one keyboard?
-This code is written for my keyboard, as it physically is. Unless you've got an 8x16 ortholinear grid, it would take some effort to apply to another keyboard. However, the device setup and the keyboard logic are fairly compartmentalized. If you can change the Device Manager behavior to suit your input device, then the rest might work ok. 
+This code is written for my keyboard, as it physically is. Unless you've got an 8x16 ortholinear grid running on a Teensy 3.6, it would take some effort to apply to another keyboard. However, the device setup and the keyboard logic are fairly compartmentalized. If you can change the Device Manager behavior to suit your input device, then the rest might work ok. 
 
+Oh, and there's some weird half-implementations throughout. Just FYI.
