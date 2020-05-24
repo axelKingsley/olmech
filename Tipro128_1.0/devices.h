@@ -1,6 +1,8 @@
 #include "definitions.h"
 #ifndef SIGNALPROCESS_H
 #define SIGNALPROCESS_H
+void startHaptics();
+void stopHaptics();
 void turnOn(int voltagePin);
 void turnOff(int voltagePin);
 void updateRow(int rowIndex);

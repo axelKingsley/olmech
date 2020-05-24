@@ -4,6 +4,23 @@
 #include <Encoder.h>
 
 /*//////////////////////////////////////////////////////////////////////////////
+HAPTIC DEVICE
+//////////////////////////////////////////////////////////////////////////////*/
+int HAPTIC1 = 33;
+int HAPTIC2 = 39;
+
+void startHaptics(){
+  digitalWrite(HAPTIC1, HIGH);
+  digitalWrite(HAPTIC2, HIGH);
+
+}
+
+void stopHaptics(){
+   digitalWrite(HAPTIC2, LOW);
+   digitalWrite(HAPTIC1, LOW);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
 ROTARY DEVICE
 //////////////////////////////////////////////////////////////////////////////*/
 
@@ -111,6 +128,8 @@ void initializeDevices() {
     pinMode(colPins[i], INPUT_PULLUP);
   }
   pinMode(ROTARY_CLICK, INPUT_PULLUP);
+  pinMode(HAPTIC1, OUTPUT);
+  pinMode(HAPTIC2, OUTPUT);
   // Clear the starting states
   for (int i = 0; i < KEY_COUNT; i++) {
     KnownState[i] = RELEASE;
